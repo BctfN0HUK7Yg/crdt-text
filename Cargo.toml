@@ -1,7 +1,7 @@
 [package]
-name = "eframe_template"
+name = "crtd_text"
 version = "0.1.0"
-authors = ["Emil Ernerfeldt <emil.ernerfeldt@gmail.com>"]
+authors = ["BctfN0HUK7Yg"]
 edition = "2021"
 rust-version = "1.56"
 
@@ -12,6 +12,7 @@ crate-type = ["cdylib", "rlib"]
 
 [dependencies]
 eframe = "0.16.0" # Gives us egui, epi and web+native backends
+yrs = "0.4.0"
 
 serde = { version = "1", features = ["derive"], optional = true }
 
@@ -25,7 +26,7 @@ opt-level = 2 # fast and small wasm
 [patch.crates-io]
 
 # If you want to use the bleeding edge version of `egui`:
-# eframe = { git = "https://github.com/emilk/egui", branch = "master" }
+eframe = { git = "https://github.com/emilk/egui", branch = "master" }
 
 # If you fork https://github.com/emilk/egui you can test with:
 # eframe = { path = "../egui/eframe" }
